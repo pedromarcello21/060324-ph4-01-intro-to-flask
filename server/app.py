@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-from flask import Flask, request
+from flask import Flask, request, make_response, jsonify
 from flask_sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate
 
@@ -17,7 +17,7 @@ db.init_app(app)
 
 @app.get('/')
 def index():
-    return "Hello world"
+    return make_response( jsonify("Hello world") )
 
 # write your routes here!
 
