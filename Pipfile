@@ -11,7 +11,7 @@ jsonify = "0.5"
 flask-cors = "*"
 
 [dev-packages]
-ipdb = "*
+ipdb = "*"
 
 [requires]
 python_full_version = "3.8.13"
