@@ -24,19 +24,19 @@
 
 1. Create a route `GET /greeting`. This route responds with this json:
 
-```
+```python
 { "response": "Hello!" }
 ```
 
 
 2. Create a route `GET /count-to/:x`. It will respond with an array of numbers from `1` to `x` as JSON. For example `/count-to/5` would respond with:
 
-```
+```python
 [1,2,3,4,5]
 ```
 
 3. Create a route `GET /lower-case/:word`. It will respond with the `word` parameter made lowercase. For example `/lower-case/HeLlO` would respond with:
 
-```
+```python
 { "result": "hello" }
 ```
